@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Inter:wght@400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@config "../tailwind.config.js";
+
+@layer base {
+  body {
+    @apply font-sans antialiased bg-white text-gray-900;
+  }
+}
+
+/* Subtle blue edge gradient used in Stitch design */
+.stitch-gradient-bg {
+  background: linear-gradient(90deg, rgba(200, 215, 255, 0.25) 0%, rgba(255, 255, 255, 0) 15%, rgba(255, 255, 255, 0) 85%, rgba(200, 215, 255, 0.25) 100%);
+}

@@ -1,30 +1,62 @@
-import { Zap, ShieldCheck, Award, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Zap, ShieldCheck, Award, ChevronLeft, ChevronRight, Star } from 'lucide-react';
+import { useState } from 'react';
+
+const testimonials = [
+    {
+        name: "Michael R.",
+        role: "Homeowner, Mission Viejo",
+        text: "AENS upgraded our electrical panel and installed EV chargers in one day. The team was incredibly professional, on time, and the workmanship was spotless. Highly recommend!",
+        avatar: "https://i.pravatar.cc/150?u=michael_r"
+    },
+    {
+        name: "Sarah T.",
+        role: "Property Manager, Irvine",
+        text: "We've used AENS for multiple commercial properties. Their response time is unbeatable — they had technicians on-site within the hour for an emergency. Truly reliable service.",
+        avatar: "https://i.pravatar.cc/150?u=sarah_t"
+    },
+    {
+        name: "David L.",
+        role: "Business Owner, San Clemente",
+        text: "Got our full office rewire done by AENS. Clean workspace, no mess left behind, and they finished ahead of schedule. CA Licensed #1071239 — the credibility shows.",
+        avatar: "https://i.pravatar.cc/150?u=david_l"
+    },
+];
 
 export default function ContactAndWhy() {
+    const [testimonialIndex, setTestimonialIndex] = useState(0);
+
+    const nextTestimonial = () => setTestimonialIndex((prev) => (prev + 1) % testimonials.length);
+    const prevTestimonial = () => setTestimonialIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+    const current = testimonials[testimonialIndex];
+
     return (
         <section className="py-20 bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Why Choose Us */}
                 <div className="text-center mb-24">
-                    <h2 className="text-4xl font-black mb-16 uppercase">Why Choose Us</h2>
-                    <div className="grid md:grid-cols-3 gap-12">
-                        <div className="flex flex-col items-center">
-                            <div className="bg-accent p-6 rounded-2xl mb-6">
-                                <Zap className="text-primary fill-primary/20" size={48} />
+                    <h2 className="text-4xl font-black mb-4 uppercase">Why Choose Us</h2>
+                    <div className="w-20 h-1 bg-[#E2703A] mx-auto mb-16 rounded-full" />
+                    <div className="grid md:grid-cols-3 gap-10">
+                        <div className="flex flex-col items-center p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+                            <div className="bg-red-50 p-5 rounded-2xl mb-6">
+                                <Zap className="text-primary" size={40} strokeWidth={2.5} />
                             </div>
-                            <h3 className="text-lg font-black mb-4 uppercase leading-tight">Quick Response Times</h3>
+                            <h3 className="text-base font-black mb-3 uppercase leading-tight">Quick Response Times</h3>
+                            <p className="text-gray-500 text-sm leading-relaxed">Fast response for emergencies. We understand your time matters — no waiting around, no runaround.</p>
                         </div>
-                        <div className="flex flex-col items-center">
-                            <div className="bg-accent p-6 rounded-2xl mb-6">
-                                <ShieldCheck className="text-primary fill-primary/20" size={48} />
+                        <div className="flex flex-col items-center p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+                            <div className="bg-red-50 p-5 rounded-2xl mb-6">
+                                <ShieldCheck className="text-primary" size={40} strokeWidth={2.5} />
                             </div>
-                            <h3 className="text-lg font-black mb-4 uppercase leading-tight">Licensed Electricians</h3>
+                            <h3 className="text-base font-black mb-3 uppercase leading-tight">Licensed & Insured</h3>
+                            <p className="text-gray-500 text-sm leading-relaxed">CA License #1071239. Fully bonded and liability insured, so every job is protected and code-compliant.</p>
                         </div>
-                        <div className="flex flex-col items-center">
-                            <div className="bg-accent p-6 rounded-2xl mb-6">
-                                <Award className="text-primary fill-primary/20" size={48} />
+                        <div className="flex flex-col items-center p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+                            <div className="bg-red-50 p-5 rounded-2xl mb-6">
+                                <Award className="text-primary" size={40} strokeWidth={2.5} />
                             </div>
-                            <h3 className="text-lg font-black mb-4 uppercase leading-tight">Award Winning Service</h3>
+                            <h3 className="text-base font-black mb-3 uppercase leading-tight">Premium Workmanship</h3>
+                            <p className="text-gray-500 text-sm leading-relaxed">We leave every job site clean and every connection tested. High-end results at every price point.</p>
                         </div>
                     </div>
                 </div>
@@ -109,24 +141,49 @@ export default function ContactAndWhy() {
 
                     {/* Testimonial */}
                     <div>
-                        <h2 className="text-3xl font-black mb-12 uppercase">Testimonial</h2>
-                        <div className="bg-accent p-12 rounded-[32px] text-center relative border border-gray-100 shadow-lg">
+                        <h2 className="text-3xl font-black mb-4 uppercase">What Clients Say</h2>
+                        <div className="w-16 h-1 bg-[#E2703A] mb-12 rounded-full" />
+                        <div className="bg-accent p-10 rounded-[32px] text-center relative border border-gray-100 shadow-lg min-h-[280px] flex flex-col justify-center">
+                            {/* Stars */}
+                            <div className="flex justify-center gap-1 mb-6">
+                                {[...Array(5)].map((_, i) => (
+                                    <Star key={i} size={16} className="text-[#E2703A] fill-[#E2703A]" />
+                                ))}
+                            </div>
                             <img
-                                src="https://i.pravatar.cc/150?u=1"
-                                alt="User"
-                                className="w-20 h-20 rounded-full mx-auto mb-6 border-4 border-white shadow-md"
+                                src={current.avatar}
+                                alt={current.name}
+                                className="w-16 h-16 rounded-full mx-auto mb-5 border-4 border-white shadow-md"
                             />
-                            <p className="text-gray-600 italic text-sm leading-relaxed mb-6">
-                                "Tanahell is the friendliest and most efficient company I have ever used. The whole thing took time to introduce the product and as a result puts forward only the best opportunities that really suit you."
+                            <p className="text-gray-600 italic text-sm leading-relaxed mb-5">
+                                "{current.text}"
                             </p>
-                            <div className="font-black uppercase text-xs">Shalime Hayden</div>
-                            <div className="text-primary font-bold text-[10px] uppercase">Product Designer</div>
+                            <div className="font-black uppercase text-xs tracking-widest">{current.name}</div>
+                            <div className="text-[#E2703A] font-bold text-[10px] uppercase mt-1">{current.role}</div>
+
+                            {/* Dots */}
+                            <div className="flex justify-center gap-2 mt-6">
+                                {testimonials.map((_, i) => (
+                                    <button
+                                        key={i}
+                                        onClick={() => setTestimonialIndex(i)}
+                                        className={`w-2 h-2 rounded-full transition-all ${i === testimonialIndex ? 'bg-[#E2703A] w-6' : 'bg-gray-300'
+                                            }`}
+                                    />
+                                ))}
+                            </div>
 
                             {/* Navigation buttons */}
-                            <button className="absolute top-1/2 -left-4 -translate-y-1/2 bg-white p-2 rounded-full shadow-md border border-gray-100 text-gray-400 cursor-pointer hover:text-primary transition-colors">
+                            <button
+                                onClick={prevTestimonial}
+                                className="absolute top-1/2 -left-4 -translate-y-1/2 bg-white p-2 rounded-full shadow-md border border-gray-100 text-gray-400 cursor-pointer hover:text-primary transition-colors"
+                            >
                                 <ChevronLeft size={16} />
                             </button>
-                            <button className="absolute top-1/2 -right-4 -translate-y-1/2 bg-white p-2 rounded-full shadow-md border border-gray-100 text-gray-400 cursor-pointer hover:text-primary transition-colors">
+                            <button
+                                onClick={nextTestimonial}
+                                className="absolute top-1/2 -right-4 -translate-y-1/2 bg-white p-2 rounded-full shadow-md border border-gray-100 text-gray-400 cursor-pointer hover:text-primary transition-colors"
+                            >
                                 <ChevronRight size={16} />
                             </button>
                         </div>

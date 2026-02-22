@@ -176,9 +176,15 @@ export default function WhatWeDo() {
                             <p className="text-gray-600 text-sm leading-relaxed mb-8">
                                 We manage the entire process – load calculations, permits, panel replacement, grounding, and final inspection – so your service is safe, code‑compliant, and ready for future expansion.
                             </p>
-                            <a href="#contact" className="inline-block bg-primary hover:bg-red-700 text-white px-10 py-3 rounded-full font-bold text-xs uppercase tracking-widest transition-all shadow-lg hover:shadow-primary/20 active:scale-95">
-                                Learn More
-                            </a>
+                            <div className="flex flex-wrap items-center gap-4">
+                                <a href="#contact" className="inline-block bg-primary hover:bg-red-700 text-white px-10 py-3 rounded-full font-bold text-xs uppercase tracking-widest transition-all shadow-lg hover:shadow-primary/20 active:scale-95">
+                                    Learn More
+                                </a>
+                                <a href="tel:9492058561" className="inline-flex items-center gap-1.5 text-sm font-bold text-[#E2703A] hover:text-primary transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.09 6.09l1-1.01a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" /></svg>
+                                    949-205-8561
+                                </a>
+                            </div>
                         </div>
                         <div className="order-2">
                             <ImageCarousel images={panelImages} />
@@ -198,9 +204,15 @@ export default function WhatWeDo() {
                             <p className="text-gray-600 text-sm leading-relaxed mb-8">
                                 Our team evaluates your panel capacity, designs the best circuit route, and delivers a clean, professional installation that charges fast and protects your electrical system.
                             </p>
-                            <a href="#contact" className="inline-block bg-primary hover:bg-red-700 text-white px-10 py-3 rounded-full font-bold text-xs uppercase tracking-widest transition-all shadow-lg hover:shadow-primary/20 active:scale-95">
-                                Get a Quote
-                            </a>
+                            <div className="flex flex-wrap items-center gap-4">
+                                <a href="#contact" className="inline-block bg-primary hover:bg-red-700 text-white px-10 py-3 rounded-full font-bold text-xs uppercase tracking-widest transition-all shadow-lg hover:shadow-primary/20 active:scale-95">
+                                    Get a Quote
+                                </a>
+                                <a href="tel:9492058561" className="inline-flex items-center gap-1.5 text-sm font-bold text-[#E2703A] hover:text-primary transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.09 6.09l1-1.01a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" /></svg>
+                                    949-205-8561
+                                </a>
+                            </div>
                         </div>
                     </div>
 
@@ -214,9 +226,15 @@ export default function WhatWeDo() {
                             <p className="text-gray-600 text-sm leading-relaxed mb-8">
                                 We remove unsafe or undersized wiring, add dedicated circuits, and integrate modern solutions like LED lighting, smart switches, and surge protection.
                             </p>
-                            <a href="#work" className="inline-block bg-primary hover:bg-red-700 text-white px-10 py-3 rounded-full font-bold text-xs uppercase tracking-widest transition-all shadow-lg hover:shadow-primary/20 active:scale-95">
-                                View Projects
-                            </a>
+                            <div className="flex flex-wrap items-center gap-4">
+                                <a href="#work" className="inline-block bg-primary hover:bg-red-700 text-white px-10 py-3 rounded-full font-bold text-xs uppercase tracking-widest transition-all shadow-lg hover:shadow-primary/20 active:scale-95">
+                                    View Projects
+                                </a>
+                                <a href="tel:9492058561" className="inline-flex items-center gap-1.5 text-sm font-bold text-[#E2703A] hover:text-primary transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.09 6.09l1-1.01a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" /></svg>
+                                    949-205-8561
+                                </a>
+                            </div>
                         </div>
                         <div className="order-2">
                             <ImageCarousel images={rewireImages} />
@@ -236,9 +254,15 @@ export default function WhatWeDo() {
                             <p className="text-gray-600 text-sm leading-relaxed mb-8">
                                 Every job is performed by licensed, insured electricians and backed by our commitment to clean work areas, clear communication, and on‑time completion.
                             </p>
-                            <a href="#contact" className="inline-block bg-primary hover:bg-red-700 text-white px-10 py-3 rounded-full font-bold text-xs uppercase tracking-widest transition-all shadow-lg hover:shadow-primary/20 active:scale-95">
-                                Contact Us
-                            </a>
+                            <div className="flex flex-wrap items-center gap-4">
+                                <a href="#contact" className="inline-block bg-primary hover:bg-red-700 text-white px-10 py-3 rounded-full font-bold text-xs uppercase tracking-widest transition-all shadow-lg hover:shadow-primary/20 active:scale-95">
+                                    Contact Us
+                                </a>
+                                <a href="tel:9492058561" className="inline-flex items-center gap-1.5 text-sm font-bold text-[#E2703A] hover:text-primary transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.09 6.09l1-1.01a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" /></svg>
+                                    949-205-8561
+                                </a>
+                            </div>
                         </div>
                     </div>
 
@@ -252,9 +276,15 @@ export default function WhatWeDo() {
                             <p className="text-gray-600 text-sm leading-relaxed mb-8">
                                 From inverter replacements and troubleshooting to full system battery integration (like Tesla Powerwall), we ensure your solar investment delivers maximum efficiency and safety.
                             </p>
-                            <a href="#contact" className="inline-block bg-primary hover:bg-red-700 text-white px-10 py-3 rounded-full font-bold text-xs uppercase tracking-widest transition-all shadow-lg hover:shadow-primary/20 active:scale-95">
-                                Solar Estimate
-                            </a>
+                            <div className="flex flex-wrap items-center gap-4">
+                                <a href="#contact" className="inline-block bg-primary hover:bg-red-700 text-white px-10 py-3 rounded-full font-bold text-xs uppercase tracking-widest transition-all shadow-lg hover:shadow-primary/20 active:scale-95">
+                                    Solar Estimate
+                                </a>
+                                <a href="tel:9492058561" className="inline-flex items-center gap-1.5 text-sm font-bold text-[#E2703A] hover:text-primary transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.09 6.09l1-1.01a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" /></svg>
+                                    949-205-8561
+                                </a>
+                            </div>
                         </div>
                         <div className="order-2">
                             <ImageCarousel images={solarImages} />

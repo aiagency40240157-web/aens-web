@@ -21,7 +21,7 @@ const features = [
     {
         icon: Zap,
         accent: RED,
-        title: '60-MINUTE RESPONSE',
+        title: 'FAST RESPONSE',
         subtitle: 'EMERGENCY ASSISTANCE',
         description: 'Fast response for urgent electrical emergencies in your local area.',
         hasButton: true,
